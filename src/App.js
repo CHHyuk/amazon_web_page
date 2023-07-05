@@ -5,10 +5,10 @@ import Home from "./Home";
 
 function App() {
   return (
-  <div className='app'>
-    <Header/>
-    <Home/>
-  </div>
+    <div className='app'>
+      <Header />
+      <Home />
+    </div>
   );
 }
 
