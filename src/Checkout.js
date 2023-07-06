@@ -1,6 +1,7 @@
 import React from "react";
 import "./Checkout.css";
 import Subtotal from "./Subtotal";
+import CheckoutProduct from "./CheckoutProduct";
 
 export default function Checkout() {
     return (
@@ -13,7 +14,9 @@ export default function Checkout() {
                         장바구니
                     </h2>
 
-                    목록
+                    <CheckoutProduct/>
+
+
                 </div>
             </div>
             <div className="checkout_right">
