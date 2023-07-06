@@ -1,19 +1,33 @@
 import React from "react";
 import './Login.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { auth } from "./firebase";
 
 export default function Login() {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
+    const navigate = useNavigate();
 
     const signIn = e => {
         e.preventDefault();
+        auth.signInWithEmailAndPassword(email, password)
+          .then(auth => {
+            navigate('/')
+          })
+          .catch(error => alert(error.message));
     }
+
     const register = e => {
         e.preventDefault();
 
-        
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((auth) => {
+                if(auth) {
+                    navigate("/")
+                }
+            })
+            .catch(error => alert(error.message));
     }
 
     return (
@@ -35,7 +49,7 @@ export default function Login() {
 
                 <p> 이용 약관 동의하십니까?</p>
 
-                <button onCilck={register}className="login_registerButton"> 회원가입 </button>
+                <button onClick={register} className="login_registerButton"> 회원가입 </button>
             </div>
 
         </div>
