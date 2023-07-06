@@ -5,7 +5,7 @@ import CheckoutProduct from "./CheckoutProduct";
 import {useStateValue} from "./StateProvider";
 
 export default function Checkout() {
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket, user}, dispatch] = useStateValue();
 
     return (
         <div className="checkout">
@@ -14,7 +14,7 @@ export default function Checkout() {
 
                 <div>
                     <h2 className="checkout_title">
-                        장바구니
+                        {user?.email}의 장바구니입니다.
                     </h2>
                     {/* 맵핑을 이용해 장바구니 내용 채우기 */}
                     {basket.map(item => (
