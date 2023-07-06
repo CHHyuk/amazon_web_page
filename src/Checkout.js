@@ -16,8 +16,10 @@ export default function Checkout() {
                     <h2 className="checkout_title">
                         장바구니
                     </h2>
-
-                    <CheckoutProduct/>
+                    {/* 맵핑을 이용해 장바구니 내용 채우기 */}
+                    {basket.map(item => (
+                        <CheckoutProduct id={item.id} title={item.title} image={item.image} price={item.price} rating={item.rating}/>
+                    ))}
 
 
                 </div>
