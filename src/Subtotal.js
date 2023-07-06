@@ -13,7 +13,7 @@ export default function Checkout() {
                             총액 ( 0 items) : <strong> 0원 </strong>
 
                         </p>
-                        <small className='subtotal-gift'>
+                        <small className='subtotal_gift'>
                             <input type="checkbox" /> 체크박스 입니다.
                         </small>
                     </>
