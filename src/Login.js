@@ -9,6 +9,7 @@ export default function Login() {
     const [password, setPassword] = React.useState("");
     const navigate = useNavigate();
 
+    // 로그인, auth에서 정보 가져와서 일치하면 라우터 / 로 페이지 이동
     const signIn = e => {
         e.preventDefault();
         auth.signInWithEmailAndPassword(email, password)
@@ -18,6 +19,7 @@ export default function Login() {
           .catch(error => alert(error.message));
     }
 
+    // 로그인, auth에 정보 새로 입력하면서 라우터 / 로 페이지 이동
     const register = e => {
         e.preventDefault();
 
