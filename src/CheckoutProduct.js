@@ -1,7 +1,17 @@
 import React from 'react';
 import './CheckoutProduct.css';
+import { useStateValue } from './StateProvider';
 
 export default function CheckoutProduct({ id, image, title, price, rating }) {
+    const [{basket}, dispatch] = useStateValue();
+    
+    // 버튼으로 장바구니에서 지우기
+    const removeFromBasket = () => {
+        dispatch({
+            type : 'REMOVE_FROM_BASKET',
+            id: id
+        })
+    }
     return (
         <div className="heckoutProduct">
             <img className='checkoutProduct_image' src={image} alt="" />
@@ -24,7 +34,7 @@ export default function CheckoutProduct({ id, image, title, price, rating }) {
                             ))
                     }
                 </div>
-                <button> 장바구니에서 제거하기 </button>
+                <button onClick={removeFromBasket}> 장바구니에서 제거하기 </button>
             </div>
         </div>
     )
