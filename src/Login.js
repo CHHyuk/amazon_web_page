@@ -12,6 +12,8 @@ export default function Login() {
     }
     const register = e => {
         e.preventDefault();
+
+        
     }
 
     return (
