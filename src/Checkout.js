@@ -10,7 +10,7 @@ export default function Checkout() {
     return (
         <div className="checkout">
             <div className="checkout_left">
-                <img className="checkout_ad" src="https://picsum.photos/id/122/1000/400" alt="" />
+                <img className="checkout_ad" src="https://picsum.photos/id/122/1200/400" alt="" />
 
                 <div>
                     <h2 className="checkout_title">

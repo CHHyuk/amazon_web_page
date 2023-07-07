@@ -42,7 +42,7 @@ function Header() {
 
                 <div className="header_option">
                     <span className="header_optionLineOne">반가워요</span>
-                    <span className="header_optionLineTwo">구독과 좋아요</span>
+                    <span className="header_optionLineTwo">제작 : CHHyuk</span>
                 </div>
 
                 <Link to="/checkout">

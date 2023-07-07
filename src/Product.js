@@ -17,6 +17,7 @@ function Product({ id, title, image, price, rating }) {
                 rating: rating
             }
         })
+        alert('장바구니에 추가됨')
     }
 
     return (

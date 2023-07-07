@@ -47,6 +47,17 @@ function Home() {
                         rating={4} />
                 </div>
                 <div className="home_row">
+                    <Product id="2326"
+                        title="제품 6"
+                        price={55000}
+                        image="https://picsum.photos/id/195/292/158"
+                        rating={5} />
+                        
+                    <Product id="2327"
+                        title="제품 6"
+                        price={37900}
+                        image="https://picsum.photos/id/221/292/158"
+                        rating={1} />
                 </div>
             </div>
         </div>

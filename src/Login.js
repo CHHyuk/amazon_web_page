@@ -14,9 +14,10 @@ export default function Login() {
         e.preventDefault();
         auth.signInWithEmailAndPassword(email, password)
           .then(auth => {
+            alert('환영합니다.')
             navigate('/')
           })
-          .catch(error => alert(error.message));
+          .catch(error => alert("로그인 실패, 이메일과 패스워드를 확인해주세요"));
     }
 
     // 로그인, auth에 정보 새로 입력하면서 라우터 / 로 페이지 이동
@@ -26,6 +27,7 @@ export default function Login() {
         auth.createUserWithEmailAndPassword(email, password)
             .then((auth) => {
                 if(auth) {
+                    alert('회원가입 완료')
                     navigate("/")
                 }
             })

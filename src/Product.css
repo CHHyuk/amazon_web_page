@@ -25,10 +25,11 @@
 }
 
 .product > button {
-    background-color: #61dafb;
+    background-color: gray;
     border: 1px solid;
     margin-top: 10px;
-    border-color: #8768bf #a5a5f3 #61dafb
+    border: 1px solid black;
+    color: white;
 }
 
 .product_price {
@@ -38,4 +39,8 @@
 .product_info {
     height: 100px;
     margin-bottom: 15px;
+}
+
+.product > button:hover {
+    background-color: #61dafb;
 }

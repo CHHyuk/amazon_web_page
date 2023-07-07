@@ -40,7 +40,13 @@
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
-    color: white;   
+    color: white;
+    padding: 5px;   
+}
+
+.header_option:hover {
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 .header_nav {
@@ -62,6 +68,13 @@
     display: flex;
     align-items: center;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header_optionBasket:hover {
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 .header_optionLineTwoheader_basketCount {

@@ -20,7 +20,7 @@ export default function Payment() {
 
 
                     <Link to="/checkout">
-                        <h1>
+                        <h1 className="payment_return">
                             장바구니 다시 설정하기 ({basket?.length} items )
                         </h1>
                     </Link>
@@ -59,7 +59,7 @@ export default function Payment() {
                     <div className='payment_section'>
 
                         <div className='payment_title'>
-                            <h3>결제</h3>
+                            <h3>결제 금액</h3>
                         </div>
                         <div className="payment_total">
                             <CurrencyFormat
