@@ -20,9 +20,6 @@ export default function Checkout() {
                             총액 ( {basket.length} 개 제품) : <strong> {value} 원 </strong>
 
                         </p>
-                        <small className='subtotal_gift'>
-                            <input type="checkbox" /> 체크박스 입니다.
-                        </small>
                     </>
                 )}
 

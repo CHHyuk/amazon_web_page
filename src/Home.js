@@ -23,7 +23,7 @@ function Home() {
                 <div className="home_row">
                     <Product id="2321"
                         title="제품 3"
-                        price={5000}
+                        price={50020}
                         image="https://picsum.photos/id/12/292/158"
                         rating={1} />
 
@@ -42,7 +42,7 @@ function Home() {
 
                     <Product id="2325"
                         title="제품 6"
-                        price={2143500}
+                        price={95340}
                         image="https://picsum.photos/id/240/292/158"
                         rating={4} />
                 </div>

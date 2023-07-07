@@ -1,11 +1,11 @@
-.payment {
-    background-color: white;
-}
-
 .payment_return {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.payment {
+    background-color: white;
 }
 
 .payment_container > h1 {
@@ -32,6 +32,7 @@
     flex: 0.2;
 }
 
+
 .payment_address, .payment_items, .payment_details {
     flex: 0.8;
 }
@@ -57,4 +58,8 @@
     margin-top: 10px;
     border-color: #a5a5f3 #8768bf #61dafb;
     color: #111111;
+}
+
+.payment_address {
+    display: flex;
 }
